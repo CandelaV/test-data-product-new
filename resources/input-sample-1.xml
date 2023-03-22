@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actcf_imp>
+		<version>CG943-01800</version>
+		<lru pnr="prn1" mfc="FAPE1" ser="CG943-01800-0007ZZ000-M53375734300">
+			<lru_life>
+<life_se ls_event_code="FF">
+					<start_life_date year="1990" month="1" day="1"/>
+					<consumption>
+						<usage_figure_unit>FC</usage_figure_unit>
+					</consumption>
+				</life_se>
+
+</lru_life>
+</lru>
+<lru pnr="prn2" mfc="FAPE2" ser="CG943-01800-0007ZZ000-X334343434">
+			<lru_life>
+<life_se ls_event_code="FF">
+					<start_life_date year="1990" month="2" day="2"/>
+					<consumption>
+						<usage_figure_unit>EH</usage_figure_unit>
+					</consumption>
+				</life_se>
+
+</lru_life>
+</lru>
+</actcf_imp>
+

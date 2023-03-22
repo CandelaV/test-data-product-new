@@ -1,0 +1,13 @@
+name: work_orders
+config_version:
+module_name: great_expectations.checkpoint
+class_name: LegacyCheckpoint
+validation_operator_name:
+batches:
+  - batch_kwargs:
+      table: work_orders
+      schema: public
+      data_asset_name: work_orders
+      datasource: airflow_db
+    expectation_suite_names:
+      - work_orders.warning

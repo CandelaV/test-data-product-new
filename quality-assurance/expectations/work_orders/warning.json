@@ -1,0 +1,124 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "work_orders.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "aenam",
+          "auart",
+          "aufnr",
+          "aviso",
+          "aviso_ir",
+          "bdmng",
+          "cost_cnq",
+          "cost_man",
+          "cost_mat",
+          "cost_mat_gen",
+          "cost_mat_in",
+          "cost_ped",
+          "cost_ped_ext",
+          "cost_recargo",
+          "daabr",
+          "dabea",
+          "dalie",
+          "darue",
+          "dawar",
+          "enmg",
+          "ftrmi",
+          "gamng",
+          "getri",
+          "gmein",
+          "gsber",
+          "gstri",
+          "lngtxt",
+          "ltxa1",
+          "maktx_comp",
+          "makxt",
+          "matnr",
+          "matnr_comp",
+          "meins_1",
+          "meins_2",
+          "post1",
+          "projn",
+          "stat_op",
+          "stat_op_us",
+          "stat_ord",
+          "stat_ord_us",
+          "steus",
+          "subgr_pro",
+          "vgw01",
+          "vgw02",
+          "vgw03",
+          "vornr",
+          "werks",
+          "zgro",
+          "znumevent",
+          "znumqsr",
+          "zpeticrda",
+          "zzcausa_op",
+          "zzcausacarga",
+          "zzpef",
+          "zzsc_msn"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_like_pattern",
+      "kwargs": {
+        "column": "aufnr",
+        "like_pattern": "work_order%"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_compound_columns_to_be_unique",
+      "kwargs": {
+        "column_list": [
+          "aufnr",
+          "auart"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "stat_ord"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "stat_ord",
+        "value_set": [
+          "started",
+          "in progress",
+          "finished"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "work_orders",
+          "datasource": "airflow_db",
+          "limit": 1000,
+          "schema": "public",
+          "table": "work_orders"
+        },
+        "batch_markers": null,
+        "batch_parameters": null,
+        "citation_date": "20211111T074840.463527Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.13.12"
+  }
+}

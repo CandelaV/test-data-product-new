@@ -1,0 +1,21 @@
+name: Test Data Product New
+domain: Finance
+description: Some test description
+creation_date: 03/22/2023 11:39:33
+owner: Jane Smith
+owner_email: jana@email.com
+information_sla: 24 h
+status: development
+git_repo: https://github.com/CandelaV/test-data-product-new
+inputPorts:
+- portKey: some_input
+  portType: csv
+outputPorts:
+- portKey: some_output
+  portType: hbase
+workloadsOrchestrator: airflow
+workloads:
+- key: some_workload
+  description: Some test description
+  resource_type: batch
+  type: GLUE
